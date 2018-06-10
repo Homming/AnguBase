@@ -1,0 +1,30 @@
+From Beginning
+	After installed node.js
+
+	npm install -g @angular/cli@latest
+
+	ng new AnguBase
+
+	cd AnguBase
+
+	ng serve --open
+
+	npm install firebase angularfire2 --save
+
+	npm install bootstrap
+
+	ng g c storage
+
+	ng g c auth
+
+	ng g c products
+	
+	ng g c product
+
+	ng g c product-list
+
+	ng g s product
+Repository
+	npm install
+
+	ng serve --open
