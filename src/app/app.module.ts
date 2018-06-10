@@ -9,16 +9,27 @@ import { AngularFireModule } from 'angularfire2';
 //Componentes
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
+//Database
+import { ProductsComponent } from './components/products/products.component';
+import { ProductComponent } from './components/products/product/product.component';
+import { ProductListComponent } from './components/products/product-list/product-list.component'; 
+//Service
+import { ProductService } from './database/services/product.service';
 
-//Módulos Firebase
+//Módulos
 import { AngularFireAuthModule } from 'angularfire2/auth';  //AUTH
 import { AngularFireStorageModule, AngularFireStorage } from 'angularfire2/storage'; //STORAGE
 import { AngularFireDatabaseModule } from 'angularfire2/database'; // DATABASE
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent
+    AuthComponent,
+    ProductsComponent,
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +40,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database'; // DATABASE
     AngularFireDatabaseModule // recursos de database
   ],
   providers: [
-    
+    ProductService
   ],
   bootstrap: [AppComponent]
 })
