@@ -9,9 +9,9 @@ From Beginning
 
 	ng serve --open
 
-	npm install firebase angularfire2 --save
+	npm i firebase angularfire2 --save
 
-	npm install bootstrap
+	npm i bootstrap
 
 	ng g c storage
 
