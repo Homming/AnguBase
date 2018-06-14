@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-// FUNÇÕES DE DATABASE ( INSERT, UPDATE, DELETE )
+// FUNÇÕES DE DATABASE ( PUSH, READ, UPDATE, REMOVE )
 
 // Firebase
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';

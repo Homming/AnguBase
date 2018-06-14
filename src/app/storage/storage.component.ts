@@ -14,10 +14,10 @@ export class StorageComponent {
   
   constructor(private afStorage: AngularFireStorage) { }
   upload(event) {
-    const id = Math.random().toString(36).substring(2);
-    this.ref = this.afStorage.ref(id);
-    this.task = this.ref.put(event.target.files[0]);
-    this.uploadProgress = this.task.percentageChanges();
+    const id = Math.random().toString(36).substring(2); //Chave Valor
+    this.ref = this.afStorage.ref(id); // Referencia
+    this.task = this.ref.put(event.target.files[0]); // AngularFireUploadTask (Put)
+    this.uploadProgress = this.task.percentageChanges(); // Progresso do Upload
   }
 
 }

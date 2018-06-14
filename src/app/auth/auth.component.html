@@ -1,10 +1,17 @@
+<!--
+  {{ user.email }}
+  {{ user.photoURL }}
+  {{ user.emailVerified }}
+  {{ user.uid }}
+-->
 <h4>Auth</h4>
   <div *ngIf="afAuth.user | async as user; else showLogin">
+    <img src="{{ user.photoURL }}" style="height:10%; width: 10%">
     <h1>Hello {{ user.displayName }}!</h1>
     <button (click)="logout()">Logout</button>
   </div>
   <ng-template #showLogin>
-    <p>Please login.</p>
-    <button (click)="login()">Login with Google</button>
+    <p>Por favor Logue.</p>
+    <button (click)="login()">Login com Google</button>
   </ng-template>
 <br><hr><br>

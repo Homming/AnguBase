@@ -1,3 +1,7 @@
+Repository
+	npm install
+
+	ng serve --open
 From Beginning
 	After installed node.js
 
@@ -12,7 +16,7 @@ From Beginning
 	npm i firebase angularfire2 --save
 
 	npm i bootstrap
-
+Components e Services
 	ng g c storage
 
 	ng g c auth
@@ -24,7 +28,3 @@ From Beginning
 	ng g c product-list
 
 	ng g s product
-Repository
-	npm install
-
-	ng serve --open
