@@ -25,7 +25,8 @@ export class ProductService {
       this.productList.push({
         name: product.name,
         category: product.category,
-        price: product.price
+        price: product.price,
+        serie: product.serie
       });
     }
 
@@ -33,7 +34,8 @@ export class ProductService {
       this.productList.update(product.$key, {
         name: product.name,
         category: product.category,
-        price: product.price
+        price: product.price,
+        serie: product.serie
       });
     }
 
